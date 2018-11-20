@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<html>
+<head>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<header>
+<h1>O co w tym wszystkich chodzi?!</h1>
+</header>
+<article>
+  <h2>KLAWIATURY, WSZĘDZIE KLAWIATURY</h2>
+  <p>Strona ma na celu przybliżenie czytelnikowi pojęcia klawiatury oraz zaprezentownie róznych jej rodzaji. Z klawiatury korzystamy w zasadzie codzinnie, pisząc coś na komputerze lub na telefonie. Dlatego warto znać różne jej rodzaje i zastanowić się dlaczego akurat na tej a nie innej tak wygodnie nam się pisze.</p>
+  </article>
+  <footer>
+    <p>Przygotował Jacek Wandachowicz</p>
+    <p>Przydatne linki:</p>
+    <a href="https://pl.ccm.net/faq/10120-uklad-klawiatury-qwerty-i-azerty">Wiecej o klawiaturach QWERTY I AZERTY</a>
+    <br>
+    <a href="https://gadzetomania.pl/60179,klawiatura-qwerty-kto-wymyslil-tak-niewygodne-ulozenie-klawiszy">Krótka historia klawiatury</a>
+    </footer>
+</html>
+{% endblock content %}

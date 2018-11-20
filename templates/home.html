@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<html>
+<head>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<header>
+   <h1>Pokrótce o klawiaturach</h1>
+</header>
+<article>
+  <div class="text" >
+  <h2>Definicja</h2>
+  <p>Klawiaturę można określić jako uporządkowany zestaw klawiszy służący do ręcznego sterowania urządzeniem lub ręcznego wprowadzania danych. W zależności od spełnianej funkcji klawiatura zawiera różnego rodzaju klawisze – alfabetyczne, numeryczne, znaków specjalnych, funkcji specjalnych, o znaczeniu definiowanym przez użytkownika.</p>
+  <p>Klawiatury występują w najróżniejszych urządzeniach domowych – klawiszowych instrumentach muzycznych, kalkulatorach, telefonach, tokenach; w szczególności jest to jeden z podzespołów wejściowych komputera.</p>
+  <p>Aktualnie używane modele klawiatur komputerowych mają około 100 klawiszy.</p>
+  <h2>Prosty podział ze względu na sposób działania klawiszy</h2>
+  <div class="lista">
+  <ul> <!--- lista --->
+    <li>I Mechaniczne, historycznie najstarsze – ruch klawisza za pomocą mniej lub bardziej skomplikowanego systemu dźwigni, cięgien itp. układów mechanicznych bezpośrednio wykonuje czynność użyteczną (np. napęd dźwigni w maszynie do pisania, przestawienie tarczy w arytmometrze mechanicznym)</li>
+    <li>II Stykowe – ruch klawisza powoduje bezpośrednio zwarcie (lub, rzadziej, rozwarcie) w układzie elektrycznym/elektronicznym</li>
+    <li>III Bezstykowe- sprężynowe, membranowe, z gumą przewodzącą</li>
+    <li>IV Ekranowe- dotykowe, klasyczne</li>
+    <li>V Wirtualne</li>
+  </ul>
+  </div>
+  <h2 >Pierwsza maszyna do pisania</h2>
+  <p>Jest to urządzenie mechaniczne o napędzie ręcznym lub elektrycznym, posiadające klawisze, które naciskane powodują wydrukowanie metodą typograficzną określonych znaków na umieszczonym w maszynie podłożu drukowym (najczęściej papierze). Urządzenie może być również wspomagane modułem elektronicznym umożliwiającym zapamiętywanie wpisywanego tekstu.</p>
+  <p>Za twórcę praktycznej maszyny do pisania uważany jest Amerykanin, Christopher Latham Sholes, który (przy współpracy Carlosa Gliddena i Samuela W. Soule’a) skonstruował w 1867 roku jej pierwszy użyteczny model.</p>
+  <h2>Klawiatura QWERTY</h2>
+  <img class="img1" src="https://cdn-images-1.medium.com/max/1600/1*hGEEitUgxU4nQxtX8q1rsA.jpeg" alt="qwerty" title="Klawiatura z układem qwerty" width="450" height="200">
+  <p>W pierwszych maszynach do pisania stosowano alfabetyczne ustawienie klawiszy. Jednak przy szybkim pisaniu sąsiedztwo często używanych klawiszy powodowało wzajemne zakleszczanie się ramion z czcionkami.</p>
+  <p>Taki układ czcionek jest efektywniejszy niż alfabetyczny. Mimo że osobom niedoświadczonym trudno jest zapamiętać układ liter, stał się standardowym układem klawiatury we współczesnych urządzeniach. Nie jest to jednak układ gwarantujący najszybsze z możliwych tempo pisania.</p>
+  <h2>Klawiatura Dvoraka</h2>
+  <img class="img2" src="https://robey.lag.net/images/cdv.png" alt="Dvorak" title="Klawiatura z układem Dvoraka" width="450" height="200">
+  <p>Układ klawiatury opatentowany jako alternatywa dla bardziej popularnego układu QWERTY, która cechowała się małą wydajnością.</p>
+  <p>Taki układ klawiszy cechowął się ułatwionym pisaniem przez podział liter na ręce, maksymalną szybkością i efektywnością. Było to spowodowane tym, że najrzadziej używane litery znajdowały się w najniższym rzędzie, jako najtrudniejsze do wciśnięcia oraz itery występujące razem były umieszczone blisko siebie na klawiaturze.</p>
+  <p>Mimo że wiele argumentów przemawia za zmianą układu QWERTY na klawiaturę Dvoraka, tego typu próby napotykają na opór. Osoby, które opanowały QWERTY, nie chcą uczyć się nowego układu.</p>
+  <h2>Klawiatura AZERTY</h2>
+  <img class="img3" src="https://www.59hardware.net/images/stories/Actus/2017/Juin/schema_azerty_simple.png" alt="azerty" title="Klawiatura z układem azerty" width="450" height="200">
+  <p>Różnice w stosunku do klawiatury qwerty są nieznaczne lecz istotne dla francuskojęzycznych użytkowników; zamianie uległy klawisze "a" z "q", "z" z "w" oraz "m" zostało przeniesione z prawej strony "n" na prawą stronę "l".</p>
+  <br><br><br><br><br><br>
+  </div>
+
+</article>
+<footer>
+  <p>Przygotował Jacek Wandachowicz</p>
+  <p>Przydatne linki:</p>
+  <a href="https://pl.ccm.net/faq/10120-uklad-klawiatury-qwerty-i-azerty">Wiecej o klawiaturach QWERTY I AZERTY</a>
+  <br>
+  <a href="https://gadzetomania.pl/60179,klawiatura-qwerty-kto-wymyslil-tak-niewygodne-ulozenie-klawiszy">Krótka historia klawiatury</a>
+</footer>
+</html>
+{% endblock content %}
